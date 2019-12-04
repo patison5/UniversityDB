@@ -3,7 +3,7 @@
 		<div class="main">
 
 			<div class="container">				
-				<div class="salons-content__wrap">
+				<div class="authentification__wrap">
 
 					<% if (!user.id && !user.login) { %>
 
@@ -28,7 +28,7 @@
 
 					<% } else { %>
 						
-						<h5>Привет, <%= user.login %></h5>
+						<h5>Привет, <span><%= user.login %></span></h5>
 						<a href="/api/auth/logout" class="item__btn-red">Выйти</a>
 
 					<% } %>
