@@ -47,8 +47,9 @@ app.use('/api/auth', routes.auth)
 app.get("/", (req, res) => {
   res.render("index", {
     user: {
-      id:    req.session.userId,
-      login: req.session.userLogin
+      id:       req.session.userId,
+      login:    req.session.userLogin,
+      authLvl:  req.session.userAuthLvl,
     }
   });
 });

@@ -66,8 +66,9 @@ exports.userLogin = (req, res) => {
 							req.session.cookie.expires = new Date(Date.now() + hour)
 							req.session.cookie.maxAge = hour
 
-					    	req.session.userId 	  = docs[0].user_id;
-					    	req.session.userLogin = docs[0].user_login;
+					    	req.session.userId 	  		= docs[0].user_id;
+					    	req.session.userLogin 		= docs[0].user_login;
+					    	req.session.userAuthLvl 	= docs[0].user_auth_lvl;
 
 					    	res.json({
 								ok: true, 

@@ -19,7 +19,7 @@ exports.registerUser = (data, callback) => {
 }
 
 exports.userLogin = (login, callback) => {	
-	db().query('SELECT user_id, user_login, user_hash FROM  users WHERE user_login = ?', [login], (error, results, fields) => {
+	db().query('SELECT user_id, user_login, user_hash, user_auth_lvl FROM  users WHERE user_login = ?', [login], (error, results, fields) => {
 		if (callback)
 			callback(error, results)
 	});

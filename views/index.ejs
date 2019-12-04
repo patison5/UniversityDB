@@ -3,11 +3,17 @@
 		<div class="container">		
 
 			<header class="header__wrap">
-				<span class="header__status">Админ</span>
+				
+				<% if (user.authLvl == 0) { %>
+				   <span class="header__status">Привет, Андрей</span>
+				<% } else if (user.authLvl == 1) { %>
+					<span class="header__status">Привет, Пидор</span>
+				<% } else { %>
+					<span class="header__status">Привет, Админ</span>
+				<% } %>
+
 				<a href="/api/auth/logout" class="btn" id="leaveOut">Выйти</a>
 			</header>
-
-			
 
 		</div>
 	</div>
