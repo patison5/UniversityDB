@@ -42,6 +42,8 @@ app.use(bodyParser.json());
 
 
 app.use('/api/auth', routes.auth)
+app.use('/api/students', routes.students)
+app.use('/api/teachers', routes.teachers)
 
 
 app.get("/", (req, res) => {

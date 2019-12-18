@@ -23,11 +23,11 @@ li, ol, ul {
     box-sizing: border-box;
 }
 a {
-    color: #fefefe;
+    color: #000;
     text-decoration: none;
 }
 a:hover {
-    color: #fff;
+    color: #000;
     text-decoration: underline;
 }
 .left {
