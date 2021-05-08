@@ -1,3 +1,3 @@
-# FuckBD
+# UniversityDB
 
 Database Homework ...
